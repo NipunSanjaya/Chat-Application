@@ -1,18 +1,18 @@
 package lk.ijse.chat_application.model;
 
-//import lombok.AllArgsConstructor;
-//import lombok.Getter;
-//import lombok.NoArgsConstructor;
-//import lombok.Setter;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-//@AllArgsConstructor
-//@NoArgsConstructor
-//@Setter
-//@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 public class Client {
     private String name;
     private int port;
@@ -71,12 +71,5 @@ public class Client {
         }
     }
 
-//    @Override
-//    public void run() {
-//        try {
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
+
 }

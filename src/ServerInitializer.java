@@ -4,13 +4,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import static javafx.application.Application.launch;
+
 public class ServerInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("lk/ijse/chat_application/view/server-form.fxml"))));
+        primaryStage.setAlwaysOnTop(true);
         primaryStage.show();
     }
 
